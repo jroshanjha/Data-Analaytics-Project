@@ -8,8 +8,8 @@ ALTER: To modify existing database structures, such as adding columns to a table
 DROP: To delete objects, like tables or indexes.
 TRUNCATE: To quickly remove all records from a table without logging each row deletion.
 RENAME: To rename a database object, such as a table or column.
+![image](https://github.com/user-attachments/assets/e2574623-f50e-4183-9134-47bb29e9f5cc)
 
-https://www.google.com/imgres?q=DDL&imgurl=https%3A%2F%2Fmiro.medium.com%2Fv2%2Fresize%3Afit%3A600%2F0*9vY3QnX4iHr3uc3_.png&imgrefurl=https%3A%2F%2Fmbavatharany.medium.com%2Fddl-and-dml-53e65988dc87&docid=q1o6dGWU1SogkM&tbnid=1cqpmYWQAEL4gM&vet=12ahUKEwji2aTysOOJAxUJwzgGHcnoKcoQM3oECBkQAA..i&w=600&h=304&hcb=2&ved=2ahUKEwji2aTysOOJAxUJwzgGHcnoKcoQM3oECBkQAA
 
 
 How To Install MySQL Workbench ?
