@@ -382,3 +382,20 @@ FROM OccupationRank
 GROUP BY RowNumber
 ORDER BY RowNumber;
 
+
+select c.company_code, c.founder, 
+count(distinct le.lead_manager_code) as total_lead_managers,
+count(distinct sm.senior_manager_code) as total_senior_managers,
+count(distinct m.manager_code) as total_managers,
+count(distinct emp.employee_code) as total_employees
+from Company as c join Lead_Manager as le on le.company_code = c.company_code
+
+join Senior_Manager as sm on sm.company_code = le.company_code
+
+join Manager as m on m.company_code = c.company_code
+
+join Employee as emp on emp.company_code = c.company_code
+group by c.company_code,c.founder
+
+order by c.company_code;
+
