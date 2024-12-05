@@ -1,0 +1,384 @@
+Here are some common MySQL interview questions covering basic MySQL commands:
+
+How do you connect to a MySQL database from the command line?
+Copy code
+
+mysql -u <username> -p
+How do you create a new database in MySQL?
+sql
+
+Copy code
+
+
+CREATE DATABASE database_name;
+How do you select a database to use in the current session?
+sql
+
+Copy code
+
+USE database_name;
+How do you create a new table in MySQL?
+sql
+
+Copy code
+
+CREATE TABLE table_name (
+   column1 datatype, 
+   column2 datatype,
+   column3 datatype
+);
+How do you list all databases and tables in MySQL?
+sql
+
+Copy code
+
+SHOW DATABASES;
+SHOW TABLES;
+How can you view table structure and columns?
+sql
+
+Copy code
+
+DESCRIBE table_name;
+How do you delete a database or table?
+
+
+DROP DATABASE database_name;
+DROP TABLE table_name;
+
+...............................
+
+Purpose: Lists all the databases on the MySQL server.
+
+SHOW DATABASES;
+USE:
+
+Purpose: Switches to a specific database for subsequent queries.
+
+USE database_name;
+SHOW TABLES:
+
+Purpose: Lists all tables in the current database.
+
+SHOW TABLES;
+DESCRIBE (or EXPLAIN):
+
+Purpose: Provides information about the structure of a table, including column names, types, and constraints.
+
+DESCRIBE table_name;
+SELECT:
+
+Purpose: Retrieves data from one or more tables.
+
+SELECT column1, column2 FROM table_name WHERE condition;
+INSERT INTO:
+
+Purpose: Adds new records to a table.
+
+INSERT INTO table_name (column1, column2) VALUES (value1, value2);
+UPDATE:
+
+Purpose: Modifies existing records in a table.
+
+UPDATE table_name SET column1 = value1 WHERE condition;
+DELETE:
+
+Purpose: Removes records from a table.
+
+DELETE FROM table_name WHERE condition;
+CREATE DATABASE:
+
+Purpose: Creates a new database.
+
+CREATE DATABASE new_database;
+CREATE TABLE:
+
+Purpose: Creates a new table with specified columns and data types.
+
+CREATE TABLE new_table (
+  column1 INT,
+  column2 VARCHAR(255),
+  ...
+);
+ALTER TABLE:
+
+Purpose: Modifies the structure of an existing table (e.g., adding or removing columns).
+
+ALTER TABLE table_name ADD COLUMN new_column INT;
+DROP DATABASE:
+
+Purpose: Deletes an existing database and all its tables.
+
+
+DROP DATABASE database_name;
+DROP TABLE:
+
+Purpose: Deletes an existing table.
+
+DROP TABLE table_name;
+
+
+.......................................................................
+
+The UNION operator combines the results of two SELECT statements, but it only returns distinct rows. To allow duplicate rows from the individual SELECT statements to show in the union result, the UNION ALL operator can be used instead.
+
+Here is an example:
+
+SELECT column1, column2 FROM table1
+UNION ALL 
+SELECT column1, column2 FROM table2;
+
+In this example, all rows from both SELECT statements would be returned in the result. Any duplicate rows that exist across the two queries will show up as duplicates in the final result.
+
+The key differences:
+
+UNION: Returns only DISTINCT rows
+UNION ALL: Returns ALL rows including duplicates
+So if you want to retain duplicates from the individual queries in the final result, use UNION ALL instead of UNION. The UNION ALL allows the preservation of duplicated rows while UNION filters them out to only return distinct values.
+
+Some key points to note:
+
+The column count and data types must match across the SELECT queries
+Order of rows is not guaranteed unless you use ORDER BY
+Can combine more than 2 SELECTs this way
+Useful for concatenating row sets quickly
+
+
+Sql different value between two select query(PostgreSQL)
+
+To find rows that are different between two SELECT queries in PostgreSQL, you can useEXCEPT or MINUS set operators.
+
+The basic syntax is:
+
+SELECT columns FROM table1
+EXCEPT 
+SELECT columns FROM table2;
+
+This would return all rows from the first query that are not returned by the second query.
+
+For example:
+
+SELECT id, name FROM products
+EXCEPT
+SELECT id, name FROM inventory;
+
+his gives all products that are not in the inventory table.
+
+Similarly, MINUS works the same way:
+
+SELECT columns FROM table1
+MINUS
+SELECT columns FROM table2;
+
+The key points about EXCEPT and MINUS:
+
+Returns rows from first query that are not in second query
+Number and order of columns must match in both queries
+Useful for comparing results between tables, queries
+NULL values are treated the same in comparing rows
+So in summary, the EXCEPT and MINUS set operators allow you to efficiently compare two queries in PostgreSQL and return rows that differ between them.
+...........................
+Hackerrank 
+..........................
+Query all columns (attributes) for every row in the CITY table.
+Query all columns for all American cities in the CITY table with populations larger than 100000. The CountryCode for America is USA.
+Query the NAME field for all American cities in the CITY table with populations larger than 120000. The CountryCode for America is USA.
+Query all columns for a city in CITY with the ID 1661.
+Query all attributes of every Japanese city in the CITY table. The COUNTRYCODE for Japan is JPN.
+Query the names of all the Japanese cities in the CITY table. The COUNTRYCODE for Japan is JPN.
+Query a list of CITY and STATE from the STATION table.
+Query a list of CITY names from STATION for cities that have an even ID number. Print the results in any order, but exclude duplicates from the answer.
+Find the difference between the total number of CITY entries in the table and the number of distinct CITY entries in the table.
+
+Query the two cities in STATION with the shortest and longest CITY names, as well as their respective lengths (i.e.: number of characters in the name). If there is more than one smallest or largest city, choose the one that comes first when ordered alphabetically.
+SELECT CITY, LENGTH(CITY) AS CITY_LENGTH
+FROM STATION
+ORDER BY CITY_LENGTH, CITY
+LIMIT 1; -- Shortest city name
+
+SELECT CITY, LENGTH(CITY) AS CITY_LENGTH
+FROM STATION
+ORDER BY CITY_LENGTH DESC, CITY
+LIMIT 1; -- Longest city name
+
+Query the smallest Northern Latitude (LAT_N) from STATION that is greater than . Round your answer to  decimal places.
+select round(LAT_N,4) 
+from Station 
+where LAT_N > 38.7780
+order by LAT_N ASC limit 1
+
+
+
+WITH RankedCities AS (
+    SELECT 
+        CITY,
+        LENGTH(CITY) AS CITY_LENGTH,
+        ROW_NUMBER() OVER (PARTITION BY LENGTH(CITY) ORDER BY CITY) AS RN
+    FROM CITY_TABLE
+)
+SELECT CITY, CITY_LENGTH
+FROM RankedCities
+WHERE RN = 1
+ORDER BY CITY_LENGTH;
+
+
+Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from STATION. 
+SELECT CITY FROM STATION WHERE CITY REGEXP '^[aeiou]' ORDER BY CITY;
+
+SELECT DISTINCT CITY
+FROM STATION
+WHERE LOWER(LEFT(CITY, 1)) IN ('a', 'e', 'i', 'o', 'u')
+ORDER BY CITY;
+
+Query the list of CITY names ending with vowels (a, e, i, o, u) from STATION.
+SELECT CITY FROM STATION WHERE CITY REGEXP '[aeiou]$' ORDER BY CITY;
+
+Query the list of CITY names from STATION which have vowels (i.e., a, e, i, o, and u) as both their first and last characters.
+SELECT CITY FROM STATION WHERE CITY REGEXP '^[aeiou].*[aeiou]$' ORDER BY CITY;
+DB:- 
+SELECT distinct CITY FROM STATION WHERE lower(left(city,1)) in('a','e','i','o','u') and lower(right(city,1)) in('a','e','i','o','u') ORDER BY CITY;
+
+Query the list of CITY names from STATION that do not start with vowels.Your result cannot contain duplicates.
+
+mysql:- SELECT DISTINCT CITY FROM STATION WHERE CITY NOT REGEXP '^[aeiou]' ORDER BY CITY;
+select distinct city from station where lower(left(city,1)) not in('a','e','i','o','u')
+
+order by city
+sql:- SELECT DISTINCT CITY FROM STATION WHERE CITY like '[^aeiou]%' ORDER BY CITY;
+
+
+Query the list of CITY names from STATION that do not end with vowels. Your result cannot contain duplicates.
+SELECT DISTINCT CITY FROM STATION WHERE CITY NOT REGEXP '[aeiou]$' ORDER BY CITY;
+
+Query the list of CITY names from STATION that either do not start with vowels or do not end with vowels. Your result cannot contain duplicates.
+SELECT DISTINCT CITY FROM STATION WHERE CITY REGEXP '^[^aeiou]|[^aeiou]$' ORDER BY CITY;
+SELECT distinct CITY FROM STATION WHERE lower(left(city,1)) not in('a','e','i','o','u') or lower(right(city,1)) not in('a','e','i','o','u') ORDER BY CITY;
+SELECT distinct CITY FROM STATION WHERE city like '[^aeiou]%' or city
+like '%[^aeiou]'
+ORDER BY CITY;
+
+Query the list of CITY names from STATION that do not start with vowels and do not end with vowels. Your result cannot contain duplicates.
+SELECT DISTINCT CITY FROM STATION WHERE CITY REGEXP '^[^aeiou].*[^aeiou]$' ORDER BY CITY;
+SELECT distinct CITY FROM STATION WHERE city regexp '^[^aeiou]' and city
+regexp '[^aeiou]$'
+ORDER BY CITY;'
+
+
+
+Query the Name of any student in STUDENTS who scored higher than  Marks. Order your output by the last three characters of each name. If two or more students both have names ending in the same last three characters (i.e.: Bobby, Robby, etc.), secondary sort them by ascending ID.
+
+SELECT Name
+FROM STUDENTS
+WHERE Marks > 75
+ORDER BY RIGHT(Name, 3),ID ASC;
+
+Write a query that prints a list of employee names (i.e.: the name attribute) from the Employee table in alphabetical order.
+
+Write a query that prints a list of employee names (i.e.: the name attribute) for employees in Employee having a salary greater than  per month who have been employees for less than  months. 
+Sort your result by ascending employee_id.
+select name from Employee where salary>2000 and months <10 order by employee_id asc
+
+Query a count of the number of cities in CITY having a Population larger than .100,000
+SELECT COUNT(*) FROM CITY WHERE Population > 100000;
+
+Query the total population of all cities in CITY where District is California.
+SELECT SUM(Population) FROM CITY WHERE District = 'California';
+
+Query the average population of all cities in CITY where District is California.
+SELECT AVG(Population) FROM CITY WHERE District = 'California';
+
+Query the average population for all cities in CITY, rounded down to the nearest integer.
+select floor(avg(population)) from City;
+
+Query the sum of the populations for all Japanese cities in CITY. The COUNTRYCODE for Japan is JPN.
+SELECT SUM(Population) FROM CITY WHERE CountryCode = 'JPN';
+
+Query the difference between the maximum and minimum populations in CITY.
+select max(population) - min(populatin) from city
+
+Query all columns for all American cities in the CITY table with populations larger than 100000. The CountryCode for America is USA.
+select * from city where countrycode ='USA' and population > 100000;
+
+Query the NAME field for all American cities in the CITY table with populations larger than 120000. The CountryCode for America is USA.
+select name from city where countrycode ='USA' and population > 120000;
+
+Write a query identifying the type of each record in the TRIANGLES table using its three side lengths. Output one of the following statements for each record in the table:
+- Valid: If the triangle is valid and its semiperimeter s is less than 20 units
+- Invalid: If the triangle is invalid
+- Not a Triangle: If the triangle is not valid
+
+
+Equilateral: It's a triangle with  sides of equal length.
+Isosceles: It's a triangle with  sides of equal length.
+Scalene: It's a triangle with  sides of differing lengths.
+Not A Triangle: The given values of A, B, and C don't form a triangle.
+
+SELECT
+  CASE
+    WHEN (a + b <= c) OR (a + c <= b) OR (b + c <= a) THEN 'Not A Triangle'
+    WHEN (a = b) AND (b = c) THEN 'Equilateral'
+    WHEN (a = b) OR (a = c) OR (b = c) THEN 'Isosceles'
+    ELSE 'Scalene'
+  END AS triangle_type
+FROM TRIANGLES;
+
+
+select 
+case 
+when (a + b <= c) OR (a + c <= b) OR (b + c <= a) then 'Not A Triangle'
+when (a = b ) and (b =c)  then 'Equilateral'
+when( a=b) or (b = c ) or (c=a) then 'Isosceles'
+else 'Scalene' 
+end as triangle_type
+from Triangles
+
+Given the CITY and COUNTRY tables, query the names of all the continents (COUNTRY.Continent) and their respective average city populations (CITY.Population) rounded down to the nearest integer.
+
+select COUNTRY.Continent, floor(avg(CITY.Population)) as AveragePopulation
+
+from city  join Country on CITY.CountryCode = COUNTRY.Code GROUP BY COUNTRY.Continent ORDER BY 
+    AveragePopulation DESC;
+
+Query an alphabetically ordered list of all names in OCCUPATIONS, immediately followed by the first letter of each profession as a parenthetical
+
+substring(name,1,1)
+select concat(Name,'(',left(Occupation,1),')')
+from OCCUPATIONS order by Name
+
+select concat('There are a total of ',count(Name),' ',lower(Occupation),'s.')
+from OCCUPATIONS 
+group by Occupation
+order by count(Name)
+
+Write a query to find the node type of Binary Tree ordered by the value of the node. Output one of the following for each node:
+
+Root: If node is root node.
+Leaf: If node is leaf node.
+Inner: If node is neither root nor leaf node.
+
+select N,
+case 
+when P is null then 'Root'
+when N in (select p from BST) then 'Inner'
+else 'Leaf'
+end as Final_output
+from BST
+order by N
+...............................
+
+WITH OccupationRank AS (
+    SELECT
+        Name,
+        Occupation,
+        ROW_NUMBER() OVER (PARTITION BY Occupation ORDER BY Name) AS RowNumber
+    FROM OCCUPATIONS
+)
+SELECT
+    COALESCE(MAX(CASE WHEN Occupation = 'Doctor' THEN Name END), 'NULL') AS Doctor,
+    COALESCE(MAX(CASE WHEN Occupation = 'Professor' THEN Name END), 'NULL') AS Professor,
+    COALESCE(MAX(CASE WHEN Occupation = 'Singer' THEN Name END), 'NULL') AS Singer,
+    COALESCE(MAX(CASE WHEN Occupation = 'Actor' THEN Name END), 'NULL') AS Actor
+FROM OccupationRank
+GROUP BY RowNumber
+ORDER BY RowNumber;
+
