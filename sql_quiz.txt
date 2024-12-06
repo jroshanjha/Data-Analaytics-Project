@@ -399,3 +399,9 @@ group by c.company_code,c.founder
 
 order by c.company_code;
 
+
+-- Convert integer to string
+SELECT CAST(123 AS CHAR) AS converted_string;
+
+
+
