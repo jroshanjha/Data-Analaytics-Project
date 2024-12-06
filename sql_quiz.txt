@@ -403,5 +403,13 @@ order by c.company_code;
 -- Convert integer to string
 SELECT CAST(123 AS CHAR) AS converted_string;
 
+WITH etc AS (
+    SELECT *,
+           (months * salary) AS earnings
+    FROM Employee
+)
 
+select earnings,count(*) from etc
+
+group by earnings having max(earnings) in ( select max(earnings) from etc)
 
