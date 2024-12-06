@@ -413,3 +413,6 @@ select earnings,count(*) from etc
 
 group by earnings having max(earnings) in ( select max(earnings) from etc)
 
+
+cast(column as char ) 
+
