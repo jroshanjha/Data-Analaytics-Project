@@ -1118,3 +1118,19 @@ if __name__ == '__main__':
     print(result)
 
 ......................................................................
+
+def find_substring_indices(string, substring):
+    # Use re.finditer to find all overlapping matches
+    matches = list(re.finditer(f'(?={re.escape(substring)})', string))
+    # Extract start and end indices as tuples
+    indices = [(match.start(), match.start() + len(substring) - 1) for match in matches]
+    return indices if indices else [(-1, -1)]
+    
+    
+S = input()
+k = input()
+
+res = find_substring_indices(S,k) 
+
+for start,end in res:
+    print(f"({start}, {end})")
