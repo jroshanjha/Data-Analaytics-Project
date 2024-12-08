@@ -1,0 +1,1120 @@
+https://www.simplilearn.com/tutorials/python-tutorial/numpy-tutorial
+
+1. https://youtu.be/chp71nEc320?si=RrKTktZ9mMZ6WXw-
+
+2. https://youtu.be/0Lt9w-BxKFQ?si=6dsRCWrCVhXM-Nhz
+
+3. https://youtu.be/88oMlkWSGz0?si=VHa1qEHrhURu8O51
+
+4. https://youtu.be/BLrGJvFp75M?si=rg4jhjbdb7UNXsq4
+
+5. https://youtu.be/TkhtvPK-lPM?si=_gvB4yN4PhpVpsMU
+
+6. https://youtu.be/ONzmH7mAgEA?si=dEJZvaGbZ1zQqxTM
+
+
+https://www.mygreatlearning.com/academy/learn-for-free/courses/introduction-to-deep-learning
+
+Basic Concepts:
+
+1. Question: What is Python?
+
+A. High-level programming language
+B. Snake species
+C. Both A and B
+D. None of the above
+
+2. Question: What is the purpose of the if __name__ == "__main__": statement in a Python script?
+
+A. It checks if the script is being run as the main program..................
+B. It defines a main function.
+C. It is used for error handling.
+D. None of the above
+Data Types:
+
+3. Question: What is the output of 3 * 'abc' in Python?...............
+
+A. abcabcabc
+B. 9
+C. abc, abc, abc
+D. Error
+
+4. Question: Which of the following is an example of a mutable data type in Python?
+
+A. String
+B. Tuple
+C. List
+D. Dictionary
+
+5. Question: In Python, what is the purpose of the break statement?................
+
+A. To exit a loop prematurely
+B. To skip the current iteration and move to the next one
+C. To raise an exception
+D. None of the above
+
+6. Question: What does the range(5) function return?
+
+A. [0, 1, 2, 3, 4]
+B. 5
+C. (0, 1, 2, 3, 4)
+D. Error
+
+
+7. Question: How do you define a function in Python?
+
+A. create function my_function:
+B. def my_function():
+C. function my_function():
+D. define my_function():
+
+8. Question: What is the purpose of the return statement in a function?
+
+A. To print a value
+B. To exit the function and return a value to the caller
+C. To define a variable
+D. None of the above
+
+
+9. Question: In Python, what is the method by which a class can inherit the attributes and behavior of another class?
+
+A. Encapsulation
+B. Inheritance
+C. Polymorphism
+D. Abstraction
+
+10. Question: What is the self parameter in a class method used for?
+
+A. It refers to the class itself.
+B. It represents the instance of the class.
+C. It is a keyword for error handling.
+D. None of the above
+
+11. 
+
+Question: How do you open a file named "example.txt" in read mode in Python?
+A. file = open("example.txt", "r")
+B. file = open("example.txt", "w")
+C. file = open("example.txt", "read")
+D. file = read("example.txt")
+.......................................
+
+12. What is the correct way to assign the value 10 to the variable x in Python?
+(a) x := 10
+(b) x = 10
+(c) x == 10
+
+13. Which of the following is a valid variable name in Python?
+(a) 1variable
+(b) myVariable
+(c) _myVariable
+
+14. What is the output of the following code?
+print("Hello, World!")
+
+(a) Hello, World!
+(b) 'Hello, World!'
+(c) "Hello, World!"
+
+What data type is the following value?
+"Hello"
+(a) String
+(b) Integer
+(c) Boolean
+
+x = {'a':1,'b':2}
+y = {'b':3,'c':4}
+z = {**x,**y}
+print(z)
+
+Which of the following is the correct way to create an empty list in Python?
+(a) myList = []
+(b) myList = {}
+(c) myList = ()
+
+What is the difference between a list and a tuple in Python?
+(a) Lists are mutable and tuples are immutable.
+(b) Tuples are mutable and lists are immutable.
+(c) Lists and tuples are both mutable.
+(d) Please explane.
+
+What is the purpose of an if statement in Python?
+(a) To execute a block of code if a condition is true.
+(b) To execute a block of code repeatedly.
+(c) To handle errors and exceptions.
+
+What is the difference between a while loop and a for loop in Python?
+(a) A while loop iterates until a condition is false, while a for loop iterates over a sequence.
+(b) A for loop iterates until a condition is false, while a while loop iterates over a sequence.
+(c) A while loop and a for loop are the same thing.
+
+
+What is the correct way to break out of a loop in Python?
+(a) break
+(b) exit
+(c) stop
+(d) please explane
+
+
+What is the purpose of a function in Python?
+(a) To organize and reuse code.
+(b) To define variables and store data.
+(c) To control the flow of a program.
+(d) please explane
+
+What is the difference between a function argument and a function parameter?
+(a) A function argument is the value that is passed to the function, while a function parameter is the variable name that is used to store the argument value.
+(b) A function parameter is the value that is passed to the function, while a function argument is the variable name that is used to store the parameter value.
+(c) A function argument and a function parameter are the same thing.
+
+What is the correct way to return a value from a function in Python?
+(a) return <value>
+(b) print <value>
+(c) exit <value>
+
+
+What is the correct syntax to print "Hello world!" in Python?
+a) print("Hello world!")
+b) echo "Hello world!"
+c) p("Hello world!")
+d) console.log("Hello world!")
+
+
+What will be the output of the following Python code:
+x = 5
+y = 10
+z = x + y
+print(z)
+
+a) 15
+b) 5 + 10
+c) x + y
+d) Error
+
+Which collection data type in Python allows duplicate elements?
+a) Tuple
+b) Set
+c) List
+d) Dictionary
+
+What will be the value of x after running this Python code:
+x = 2 
+x += 3 * 4 / 2 
+a) 8 
+b) 6 
+c) 4 
+d) 10
+
+
+Which keyword is used in Python to define a function?
+a) func
+b) function
+c) def
+d) define
+
+Which method can be used to remove an element from a list in Python?
+a) delete()
+b) removed()
+c) remove()
+d) pop()
+
+What is the correct way to assign the value 10 to the variable x in Python?
+(a) x := 10
+(b) x = 10
+(c) x == 10
+ 
+Which of the following is a valid variable name in Python?
+(a) 1variable
+(b) myVariable
+(c) _myVariable
+
+
+
+
+Which of the following is the correct way to create an empty list in Python?
+(a) myList = []
+(b) myList = {}
+(c) myList = ()
+
+
+What is the difference between a list and a tuple in Python?
+(a) Lists are mutable and tuples are immutable.
+(b) Tuples are mutable and lists are immutable.
+(c) Lists and tuples are both mutable.
+
+
+What is the purpose of an if statement in Python?
+(a) To execute a block of code if a condition is true.
+(b) To execute a block of code repeatedly.
+(c) To handle errors and exceptions.
+
+
+What is the difference between a while loop and a for loop in Python?
+(a) A while loop iterates until a condition is false, while a for loop iterates over a sequence.
+(b) A for loop iterates until a condition is false, while a while loop iterates over a sequence.
+(c) A while loop and a for loop are the same thing.
+
+What is the correct way to break out of a loop in Python?
+(a) break
+(b) exit
+(c) stop
+
+
+What is the purpose of a function in Python?
+(a) To organize and reuse code.
+(b) To define variables and store data.
+(c) To control the flow of a program.
+
+
+What is the difference between a function argument and a function parameter?
+(a) A function argument is the value that is passed to the function, while a function parameter is the variable name that is used to store the argument value.
+(b) A function parameter is the value that is passed to the function, while a function argument is the variable name that is used to store the parameter value.
+(c) A function argument and a function parameter are the same thing.
+
+
+What is the correct way to return a value from a function in Python?
+(a) return <value>
+(b) print <value>
+(c) exit <value>
+
+
+What operator is used for exponentiation in Python?
+a) ^
+b) **
+c) $$
+d) ^^
+
+
+What is the result of the following: 10 % 3
+a) 2
+b) 3
+c) 1
+d) Error
+
+What is the output of the following:
+python Copy code
+
+x = 10
+y = 5
+print(x == y)
+a) True
+b) False
+c) Error
+d) 5
+
+
+Which of these is NOT a bitwise operator in Python?
+a) &
+b) ^
+c) √
+d) <<
+
+
+What happens when we apply the NOT operator (~) on a number?
+a) It reverses all the bits
+b) It makes the number negative
+c) It converts the number to binary
+d) None of the above
+
+Which operator is used to find the remainder of a division operation in Python?
+a. %
+b. //
+c. *
+d. /
+
+What is the result of the expression True or False in Python?
+a. True
+b. False
+c. Syntax Error
+d. None of the above
+
+What is the result of the expression 10 < 5 in Python?
+a. True
+b. False
+c. Syntax Error
+d. None of the above
+
+What is the result of the expression 5 in [1, 2, 3, 4, 5] in Python?
+a. True
+b. False
+c. Syntax Error
+d. None of the above
+
+Which operator is used to concatenate strings in Python?
+a. +
+b. -
+c. *
+d. None of the above
+
+What is the result of the expression "Hello, " + "World!" in Python?
+a. Hello, World!
+b. Syntax Error
+c. None of the above
+
+Which operator is used to perform a bitwise AND operation in Python?
+a. &
+b. |
+c. ^
+d. None of the above
+
+What is the result of the expression 5 & 3 in Python?
+a. 1
+b. 3
+c. 5
+d. 0
+
+Which operator is used to perform a bitwise OR operation in Python?
+a. |
+b. &
+c. ^
+d. None of the above
+
+What is the result of the expression 5 | 3 in Python?
+a. 7
+b. 3
+c. 5
+d. 0
+
+What is the result of the following expression?
+a = 7
+b = 3
+result = a % b
+print(result)
+a) 2
+b) 1
+c) 3
+d) 0
+
+Which operator is used for exponentiation in Python?
+a) *
+b) /
+c) **
+d) ^
+
+What will be the value of x after the following code is executed?
+x = 1
+x %= 5 
+print(x)
+
+What does the following expression evaluate to?
+
+not (True and False)
+
+a) True
+b) False
+c) True and False
+d) None
+
+Which operator is used to check if a value is present in a sequence?
+a) =
+b) in
+c) ==
+d) not in
+
+What is the output of the following code?
+p = True
+q = False
+result = p or (not q)
+print(result)
+
+a) True
+b) False
+c) None
+d) Error
+
+What is the value of y in the following code?
+x = 5
+y = x > 3 and x < 10
+
+a) 5
+b) True
+c) False
+d) 10
+
+Which operator is used for identity testing in Python?
+
+a) ==
+b) is
+c) =
+d) in
+
+What is the result of the following expression?
+
+a = [1, 2, 3]
+b = [1, 2, 3]
+result = a == b
+print(result)
+
+a) True
+b) False
+c) Error
+d) None
+
+What does the is operator check for in Python?
+
+a) Equality of values
+b) Identity of objects
+c) Membership in a sequence
+d) None of the above
+
+
+
+/-- 15-12-2023 
+
+table = int(input("Enter a table number\n"))
+
+num  = 1
+while num<=20:
+    print(f'{table} * {num} = {table*num}')
+    num = num+1
+    
+    https://www.datacamp.com/blog/top-python-interview-questions-and-answers
+    https://pynative.com/python-tuple-quiz/
+
+1. Select which is true for Python tuple
+
+ A tuple maintains the order of items
+ A tuple is unordered
+ We cannot change the tuple once created
+ We can change the tuple once created
+
+What is the output of the following
+
+aTuple = (10, 20, 30, 40, 50, 60, 70, 80)
+print(aTuple[2:5], aTuple[:4], aTuple[3:])
+ (30, 40, 50) (10, 20, 30, 40) (40, 50, 60, 70, 80)
+ (20, 30, 40, 50) (10, 20, 30, 40) (30, 40, 50, 60, 70, 80)
+
+
+4. Choose the correct way to access value 20 from the following tuple
+
+aTuple = ("Orange", [10, 20, 30], (5, 15, 25))
+aTuple[1:2][1]
+aTuple[1:2](1)
+aTuple[1:2][1]
+aTuple[1][1]
+
+5. What is the output of the following
+
+tuple1 = (1120, 'a')
+print(max(tuple1))
+ TypeError
+ 1120
+ ‘a’
+
+6. What is the output of the following code
+
+aTuple = (100, 200, 300, 400, 500)
+aTuple[1] = 800
+print(aTuple)
+TypeError
+(100, 800, 200, 300, 400, 500)
+(800, 100, 200, 300, 400, 500)
+
+
+7. Select true statements regarding the Python tuple
+
+We can remove the item from tuple but we cannot update items of the tuple
+We cannot delete the tuple
+We cannot remove the items from the tuple
+We cannot update items of the tuple.
+
+8. What is the output of the following code
+
+aTuple = (100, 200, 300, 400, 500)
+print(aTuple[-2])
+print(aTuple[-4:-1])
+IndexError: tuple index out of range
+400
+(200, 300, 400)
+
+9. A Python tuple can also be created without using parentheses
+
+False
+True
+
+
+10. What is the output of the following tuple operation
+
+aTuple = (100,)
+print(aTuple * 2)
+TypeError
+(100, 100)
+(200)
+
+11. What is the type of the following variable
+
+aTuple = ("Orange")
+print(type(aTuple))
+list
+tuple
+array
+str
+
+12. What is the output of the following tuple operation
+
+aTuple = (100, 200, 300, 400, 500)
+aTuple.pop(2)
+print(aTuple)
+(100, 200, 400, 500)
+(100, 300, 400, 500)
+AttributeError
+....................................................................
+....................................................................
+....................................................................
+Write a solution to create a DataFrame from a 2D list called student_data. This 2D list contains the IDs and ages of some students.
+
+The DataFrame should have two columns, student_id and age, and be in the same order as the original 2D list.
+
+import pandas as pd
+
+def createDataframe(student_data: List[List[int]]) -> pd.DataFrame:
+
+#data = pd.DataFrame({'student_id':[1,2,3,4],'age':[15,11,11,20]})
+#print(data)
+
+    student_df = pd.DataFrame(student_data, columns=['student_id', 'age'])
+    return student_df
+    # print(student_df)
+
+student_data = [[1001, 18], [1002, 20], [1003, 19], [1004, 21], [1005, 22]]
+
+print(createDataframe(student_data))
+
+
+Write a solution to calculate and display the number of rows and columns of players.
+
+def getDataframeSize(players: pd.DataFrame) -> List[int]:
+
+    num_rows = players.shape[0]
+    num_cols = players.shape[1]
+    return [num_rows, num_cols]
+
+players = pd.DataFrame({
+    'Name': ['John', 'Emma', 'Michael', 'Sophia', 'David'],
+    'Age': [25, 30, 28, 35, 32],
+    'Sport': ['Soccer', 'Tennis', 'Basketball', 'Swimming', 'Football']
+})
+players = pd.DataFrame({
+    'Name': ['John']
+})
+print(getDataframeSize(players))
+
+Write a solution to display the first 3 rows of this DataFrame.
+
+import pandas as pd
+
+def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
+
+    return employees.head(3)
+
+
+data = pd.DataFrame({'name':['a','b','c','d','e','f','g']})
+
+print(selectFirstRows(data))
+
+Write a solution to select the name and age of the student with student_id = 101.
+
+import pandas as pd
+
+def selectData(students: pd.DataFrame) -> pd.DataFrame:
+    
+    students = students[students['student_id']==101]
+    students= students[['name','age']]
+
+    return students
+
+data = pd.DataFrame({'student_id':[101,102,103],'name':['a','b','c'],'age':[14,56,78]})
+print(selectData(data))
+
+Write a solution to create a new column name bonus that contains the doubled values of the salary column.
+import pandas as pd
+
+def createBonusColumn(employees: pd.DataFrame) -> pd.DataFrame:
+
+    employees['bonus'] = employees['salary']* 2
+
+    return employees 
+
+data = ({'name':['a','b','c','d','e'],'salary':[1200,1500,1800,2200,2500]})
+print(createBonusColumn(data))
+
+There are some duplicate rows in the DataFrame based on the email column.
+
+Write a solution to remove these duplicate rows and keep only the first occurrence.
+import pandas as pd
+
+def dropDuplicateEmails(customers: pd.DataFrame) -> pd.DataFrame:
+    
+    customers = pd.DataFrame(customers)
+    customers.drop_duplicates(subset=['email'],inplace=True) # keep ='first'
+    return customers
+
+
+data = {
+    'name': ['a', 'b', 'c', 'd', 'e'],
+    'salary': [1200, 1500, 1800, 2200, 2500],
+    'email': ['a@example.com', 'b@example.com', 'c@example.com', 'd@example.com', 'b@example.com']
+}
+print(dropDuplicateEmails(data))
+
+There are some rows having missing values in the name column.
+
+Write a solution to remove the rows with missing values.
+
+import pandas as pd
+
+def dropMissingData(students: pd.DataFrame) -> pd.DataFrame:
+
+    students= pd.DataFrame(students)
+    students.dropna(subset=['name'],inplace=True)
+    return students
+
+Write a solution to modify the salary column by multiplying each salary by 2.
+import pandas as pd
+
+def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
+    employees['salary'] = employees['salary'] * 2
+
+    return employees
+
+Write a solution to rename the columns as follows:
+
+id to student_id
+first to first_name
+last to last_name
+age to age_in_years
+
+import pandas as pd
+
+def renameColumns(students: pd.DataFrame) -> pd.DataFrame:
+
+    students = students.rename(columns={'id':'student_id','first':'first_name','last':'last_name','age':'age_in_years'})
+
+    return students
+
+The grade column is stored as floats, convert it to integers.
+import pandas as pd
+
+def changeDatatype(students: pd.DataFrame) -> pd.DataFrame:
+
+
+    students = pd.DataFrame(students)
+    students['grade'] = students['grade'].astype('int')
+    return students
+
+data = {
+    'name': ['John', 'Emma', 'Michael', 'Sophia', 'David'],
+    'grade': [90.5, 85.2, 92.7, 88.0, 78.9]
+}
+
+print(changeDatatype(data))
+
+Write a solution to fill in the missing value as 0 in the quantity column.
+import pandas as pd
+
+def fillMissingValues(products: pd.DataFrame) -> pd.DataFrame:
+
+    df = pd.DataFrame(products)
+    df['quantity'] = df['quantity'].fillna(0)
+
+    return df
+
+data = {
+    'product': ['Product A', 'Product B', 'Product C', 'Product D', 'Product E'],
+    'quantity': [10, None, 15, None, 20]
+}
+print(fillMissingValues(data))
+    
+
+Write a solution to concatenate these two DataFrames vertically into one DataFrame.
+    
+import pandas as pd
+
+def concatenateTables(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
+
+    df= pd.concat([df1, df2], ignore_index=True)
+
+    return df
+
+
+df1 = pd.DataFrame({
+    'Name': ['John', 'Emma', 'Michael'],
+    'Age': [25, 30, 28],
+    'City': ['New York', 'London', 'Paris']
+})
+
+# Create the second DataFrame
+df2 = pd.DataFrame({
+    'Name': ['Sophia', 'David'],
+    'Age': [35, 32],
+    'City': ['Tokyo', 'Sydney']
+})
+
+print(concatenateTables(df1,df2))
+
+Write a solution to pivot the data so that each row represents temperatures 
+for a specific month, and each city is a separate column.
+
+import pandas as pd
+
+def pivotTable(weather: pd.DataFrame) -> pd.DataFrame:
+    df = pd.DataFrame(weather)
+    pivoted_df = df.pivot(index='month', columns='city', values='temperature')
+
+    return pivoted_df
+
+data = {
+    'month': ['Jan', 'Jan', 'Jan', 'Feb', 'Feb', 'Feb'],
+    'city': ['New York', 'London', 'Tokyo', 'New York', 'London', 'Tokyo'],
+    'temperature': [25, 10, 5, 30, 15, 10]
+}
+print(pivotTable(data))
+
+Write a solution to reshape the data so that each row represents sales data 
+for a product in a specific quarter.
+
+# Reshape data using melt
+df_reshaped = df.melt(id_vars='Product', var_name='Quarter', value_name='Sales')
+
+import pandas as pd
+
+def meltTable(report: pd.DataFrame) -> pd.DataFrame:
+    #df =  pd.DataFrame(report)
+    #output = df.pivot_table(index='product', columns='quarter', values='sales', aggfunc='sum')
+    # df.pivot(index='product', columns='quarter', values='sales').reset_index()
+    # output = output.fillna(0)
+    output = pd.melt(report,id_vars=['product'], var_name='quarter', value_name='sales')
+    return output
+    
+
+# data = {
+#     'product': ['Product A', 'Product A', 'Product A', 'Product A', 'Product B', 'Product B', 'Product B', 'Product B'],
+#     'quarter': ['Q1', 'Q2', 'Q3', 'Q4', 'Q1', 'Q2', 'Q3', 'Q4'],
+#     'sales': [100, 120, 110, 150, 80, 90, 85, 95]
+# }
+
+# print(meltTable(data))
+
+
+Write a solution to list the names of animals that weigh strictly more than 100 kilograms.
+
+import pandas as pd
+
+def findHeavyAnimals(animals: pd.DataFrame) -> pd.DataFrame:
+    
+    df = pd.DataFrame(animals)
+    df = df.sort_values(by='weight',ascending=False)
+    df = df[df['weight']>100][['name']]
+    return df
+
+return animals[animals['weight'] > 100].sort_values(['weight'],ascending=False)[['name']]
+
+animals = animals.sort_values(by='weight', ascending=False)
+    return animals.loc[animals["weight"] > 100, ['name']]
+
+
+import pandas as pd
+
+def find_type_i_diabetes_patients(df):
+    # Create a boolean mask for rows where 'conditions' contains 'DIAB1'
+    mask = df['conditions'].str.contains(r'\bDIAB1', regex=True)
+    
+    # Apply the mask and select required columns
+    result = df.loc[mask, ['patient_id', 'patient_name', 'conditions']]
+    
+    return result
+
+# Example usage:
+# df = pd.DataFrame({
+#     'patient_id': [1, 2, 3, 4],
+#     'patient_name': ['John', 'Jane', 'Bob', 'Alice'],
+#     'conditions': ['DIAB1', 'COLD DIAB1', 'FLU', 'DIAB1 FEVER']
+# })
+# result = find_type_i_diabetes_patients(df)
+# print(result)
+
+.................................................................................
+.................................................................................
+https://www.geeksforgeeks.org/python-interview-questions/
+https://www.datacamp.com/blog/top-python-interview-questions-and-answers
+
+What is Python?
+Answer: Python is a high-level, interpreted programming language known for its readability and versatility. It supports multiple programming paradigms, 
+including procedural, object-oriented, and functional programming.
+
+What are Python’s key features?
+Answer: Some key features of Python include:
+Easy to read and write
+Interpreted language
+Dynamically typed
+Extensive standard library
+Supports multiple programming paradigms
+Open-source and community-driven1.
+
+What is PEP 8 and why is it important?
+Answer: PEP 8 is the Python Enhancement Proposal that provides guidelines 
+and best practices on how to write Python code. 
+It helps maintain readability and consistency across Python projects
+
+How does Python handle memory management?
+Answer: Python uses automatic memory management, 
+which includes garbage collection to free up memory that is no longer in use. 
+It also uses reference counting to keep track of the number of references to each object in memory2.
+
+What are Python decorators?
+Answer: Decorators are a way to modify or enhance functions or methods without changing their actual code. 
+They are often used for logging, access control, and instrumentation2
+
+def my_decorator(func):
+    def wrapper():
+        print("Something is happening before the function is called.")
+        func()
+        print("Something is happening after the function is called.")
+    return wrapper
+
+@my_decorator
+def say_hello():
+    print("Hello!")
+
+say_hello()
+
+What is the difference between list, tuple, and set in Python?
+Answer:
+List: Ordered, mutable, allows duplicate elements.
+Tuple: Ordered, immutable, allows duplicate elements.
+Set: Unordered, mutable, does not allow duplicate elements
+
+Explain the use of self in Python classes.
+Answer: self is a reference to the current instance of the class. 
+It is used to access variables and methods associated with the class instance2.
+
+What is the difference between __init__ and __new__ in Python?
+Answer: __init__ initializes a newly created object, while __new__ is 
+responsible for creating a new instance of the class__new__ is called before __init__2.
+
+How do you handle exceptions in Python?
+Answer: Exceptions in Python are handled using try, except, else, and finally blocks.
+
+try:
+    # Code that might raise an exception
+    result = 10 / 0
+except ZeroDivisionError:
+    print("Cannot divide by zero!")
+else:
+    print("Division successful!")
+finally:
+    print("This will always execute.")
+```[^1^][1].
+
+
+What are Python’s built-in data types?
+Answer: Python’s built-in data types include:
+Numeric types: int, float, complex
+Sequence types: list, tuple, range
+Text type: str
+Mapping type: dict
+Set types: set, frozenset
+Boolean type: bool
+Binary types: bytes, bytearray, memoryview1.
+
+
+Great! Here are some more advanced Python interview questions along with their answers:
+
+What is the Global Interpreter Lock (GIL) in Python?
+Answer: The GIL is a mutex that protects access to Python objects, preventing multiple threads from executing Python bytecodes at once. This means that even in multi-threaded programs, only one thread can execute Python code at a time. This can be a limitation for CPU-bound programs but doesn’t affect I/O-bound programs as much.
+
+Explain the difference between deep copy and shallow copy.
+Answer: A shallow copy creates a new object but inserts references into it to the objects 
+found in the original. 
+A deep copy creates a new object and recursively copies all objects found in the original.
+
+import copy
+original = [[1, 2, 3], [4, 5, 6]]
+shallow = copy.copy(original)
+deep = copy.deepcopy(original)
+```.
+
+
+What are Python’s magic methods? Give an example.
+Answer: Magic methods are special methods that start and end with double underscores (__). 
+They are also known as dunder methods. They allow you to define the behavior of objects for
+built-in operations. For example, __init__ initializes an object, and __str__ defines the string representation of an object.
+
+class Example:
+    def __init__(self, value):
+        self.value = value
+
+    def __str__(self):
+        return f'Example with value {self.value}'
+
+obj = Example(10)
+print(obj)  # Output: Example with value 10
+```.
+
+What is a lambda function? Provide an example.
+Answer: A lambda function is a small anonymous function defined with the lambda keyword. 
+It can have any number of arguments but only one expression.
+
+add = lambda x, y: x + y
+print(add(2, 3))  # Output: 5
+```.
+
+
+How do you manage packages in Python?
+Answer: Packages in Python are managed using tools like pip (Python’s package installer) and virtualenv (for creating isolated Python environments). You can install packages using pip install package_name and create virtual environments using virtualenv env_name.
+
+What is the difference between @staticmethod and @classmethod?
+Answer: @staticmethod defines a method that doesn’t operate on an instance or class. It doesn’t take self or cls as the first argument. @classmethod defines a method that operates on the class itself and takes cls as the first argument.
+class MyClass:
+    @staticmethod
+    def static_method():
+        print("This is a static method.")
+
+    @classmethod
+    def class_method(cls):
+        print("This is a class method.")
+
+MyClass.static_method()  # Output: This is a static method.
+MyClass.class_method()   # Output: This is a class method.
+```.
+
+
+What is the purpose of the with statement in Python?
+Answer: The with statement is used for resource management and exception handling. It ensures that resources are properly acquired and released. For example, it is commonly used for file operations to ensure that files are closed after their suite finishes.
+with open('file.txt', 'r') as file:
+    content = file.read()
+# No need to explicitly close the file
+```.
+
+
+Explain the concept of generators in Python.
+Answer: Generators are a simple way to create iterators using a function that yields values one at a time. They are memory efficient because they generate items on the fly and do not store the entire sequence in memory.
+
+def my_generator():
+    yield 1
+    yield 2
+    yield 3
+
+for value in my_generator():
+    print(value)
+# Output: 1 2 3
+```.
+
+What is the difference between __repr__ and __str__?
+Answer: __repr__ is intended to provide an unambiguous representation of an object, useful for debugging. __str__ is intended to provide a readable, human-friendly representation of an object.
+
+class Example:
+    def __repr__(self):
+        return 'Example()'
+
+    def __str__(self):
+        return 'This is an example object.'
+
+obj = Example()
+print(repr(obj))  # Output: Example()
+print(str(obj))   # Output: This is an example object.
+```.
+
+
+```.
+
+# Hackerrank:- 
+n = int(input())
+    
+    for i in range(n):
+        print(i**2)
+
+def is_leap(year):
+    # Write your logic here
+    
+    if year % 4==0:
+        if year % 100==0:
+            if year % 400==0:
+                return True
+            else:
+                return False
+        else:
+            return True
+    else:
+        return False
+    
+year = int(input())
+print(is_leap(year))
+
+if __name__ == '__main__':
+    n = int(input())    
+    new_str = ''
+    for i in range(1,n+1):
+        new_str = new_str + str(i)
+        # String can't concatenant with int data thpes
+    print(new_str)
+        
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+    
+    new_list = list(set(arr))
+    
+    new_list.sort(reverse=True)
+    
+    print(new_list[1])
+
+
+if __name__ == '__main__':
+    # Number of students
+    n = int(input('Number of students'))
+
+    # Creating a nested list to store student names and grades
+    students = []
+
+    # Getting input for student names and grades
+    for _ in range(n):
+        name = input()
+        score = float(input())
+        students.append([name, score])
+
+    # Sorting the list based on grades
+    students.sort(key=lambda x: x[1])
+
+    # Finding the second lowest grade
+    second_lowest_grade = sorted(set([student[1] for student in students]))[1]
+
+    # Getting the names of students with the second lowest grade
+    second_lowest_students = [student[0] for student in students if student[1] == second_lowest_grade]
+
+    # Sorting the names alphabetically
+    second_lowest_students.sort()
+
+    # Printing the names of students with the second lowest grade
+    for name in second_lowest_students:
+        print(name)
+
+f __name__ == '__main__':
+    n = int(input())
+    student_marks = {}
+    for i in range(n):
+        name, *line = input().split()
+        scores = list(map(float, line))
+        student_marks[name] = scores
+    query_name = input()
+    
+    marks = student_marks[query_name]
+    average = sum(marks) / len(marks)
+    print(f"{average:.2f}")
+
+def split_and_join(line):
+    # write your code here
+    
+    str_split = line.split(" ")
+    
+    str_join = "-".join(str_split)
+    
+    return str_join
+
+if __name__ == '__main__':
+    line = input()
+    result = split_and_join(line)
+    print(result)
+
+......................................................................
