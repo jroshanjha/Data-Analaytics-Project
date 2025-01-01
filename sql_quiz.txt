@@ -420,3 +420,12 @@ cast(column as char )
 select round(sqrt(power(max(LAT_N)-min(LAT_N),2) + power(max(LONG_W)-min(LONG_W),2)),4)
 from Station
 
+SELECT ROUND(LAT_N, 4)
+FROM (
+    SELECT LAT_N,
+           ROW_NUMBER() OVER (ORDER BY LAT_N) AS row_num,
+           COUNT(*) OVER () as total_count
+    FROM STATION
+) ranked
+WHERE row_num IN ((total_count + 1)/2, (total_count + 2)/2);
+
