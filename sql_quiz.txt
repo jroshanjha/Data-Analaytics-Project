@@ -429,3 +429,24 @@ FROM (
 ) ranked
 WHERE row_num IN ((total_count + 1)/2, (total_count + 2)/2);
 
+
+select case when Marks >=70 then Name else null end as Name,
+       case when Marks >= 90 then 10 
+            when Marks >= 80 then 9 
+            when Marks >= 70 then 8 
+            when Marks >= 60 then 7 
+            when Marks >= 50 then 6
+            when Marks >= 40 then 5 
+            when Marks >= 30 then 4
+            when Marks >= 20 then 3 
+            when Marks >= 10 then 2 
+            else 1 end as Grade,
+            Marks
+
+from Students 
+
+order by Grade desc ,
+      CASE 
+        WHEN Grade >= 8 THEN Name
+        ELSE Marks
+    END ASC;
