@@ -450,3 +450,17 @@ order by Grade desc ,
         WHEN Grade >= 8 THEN Name
         ELSE Marks
     END ASC;
+
+select Hackers.hacker_id , Hackers.name 
+from Hackers join (
+select Submissions.hacker_id ,count(distinct Submissions.challenge_id) as total
+from Submissions 
+    join Challenges on Challenges.challenge_id = Submissions.challenge_id
+    join Difficulty on Difficulty.difficulty_level = Challenges.difficulty_level
+where Submissions.score =Difficulty.score  
+    -- and Difficulty.score = 100
+group by hacker_id having count(distinct Submissions.challenge_id)>1
+-- order by total desc 
+) as etc on etc.hacker_id = Hackers.hacker_id
+
+order by etc.total desc , Hackers.hacker_id asc
