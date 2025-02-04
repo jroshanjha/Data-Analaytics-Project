@@ -1134,3 +1134,26 @@ res = find_substring_indices(S,k)
 
 for start,end in res:
     print(f"({start}, {end})")
+....................................................
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from collections import Counter
+
+num_of_shoes = int(input())
+
+shoes_size = Counter(map(int,input().split()))
+
+cus_no = int(input())
+
+total_money = 0 
+
+for i in range(cus_no):
+    size,money = map(int,input().split())
+    
+    if shoes_size[size] >0:
+        total_money += money 
+        
+        shoes_size[size] -= 1
+        
+print(total_money)
+
