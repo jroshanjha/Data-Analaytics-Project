@@ -1,0 +1,241 @@
+import pandas as pd
+import numpy as np
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score, classification_report
+
+# Load dataset
+def load_data(file_path):
+    return pd.read_csv(file_path)
+
+# Preprocess data
+def preprocess_data(df):
+    df = df.dropna()
+    X = df.drop(columns=['loan_status'])
+    y = df['loan_status'].apply(lambda x: 1 if x == '1' else 0)  # Convert to binary classification
+    
+    scaler = StandardScaler()
+    X_scaled = scaler.fit_transform(X.select_dtypes(include=[np.number]))
+    
+    return train_test_split(X_scaled, y, test_size=0.2, random_state=42)
+
+# Train model
+def train_model(X_train, y_train):
+    model = RandomForestClassifier(n_estimators=100, random_state=42)
+    model.fit(X_train, y_train)
+    return model
+
+# Evaluate model
+def evaluate_model(model, X_test, y_test):
+    y_pred = model.predict(X_test)
+    accuracy = accuracy_score(y_test, y_pred)
+    report = classification_report(y_test, y_pred)
+    return accuracy, report
+
+if __name__ == "__main__":
+    file_path = "data.csv"  # Update with actual file path
+    df = load_data(file_path)
+    X_train, X_test, y_train, y_test = preprocess_data(df)
+    model = train_model(X_train, y_train)
+    accuracy, report = evaluate_model(model, X_test, y_test)
+    
+    print(f"Model Accuracy: {accuracy:.2f}")
+    print("Classification Report:\n", report)
+
+..........................................................................................
+..........................................................................................
+# Be ready to explain:
+- Decorators, generators, iterators
+- OOP principles in Python
+- Memory management and garbage collection
+- Threading vs Multiprocessing
+- Context managers
+
+# Key concepts to review:
+- Supervised vs Unsupervised Learning
+- Classification vs Regression
+- Overfitting/Underfitting
+- Bias-Variance tradeoff
+- Feature selection methods
+- Model evaluation metrics (accuracy, precision, recall, F1)
+
+# Focus areas:
+- Neural Network architectures
+- Activation functions
+- Backpropagation
+- Common NLP tasks (tokenization, embeddings)
+- Transformer architecture basics
+
+.................................................................
+.................................................................
+
+# 1. Advanced Python Concepts Demo
+
+# Decorator Example
+def timing_decorator(func):
+    from time import time
+    def wrapper(*args, **kwargs):
+        start = time()
+        result = func(*args, **kwargs)
+        end = time()
+        print(f"Function {func.__name__} took {end-start:.2f} seconds")
+        return result
+    return wrapper
+
+@timing_decorator
+def compute_intensive_task(n):
+    return sum(i * i for i in range(n))
+
+# Generator Example
+def fibonacci_generator(n):
+    a, b = 0, 1
+    for _ in range(n):
+        yield a
+        a, b = b, a + b
+
+# Context Manager Example
+class DatabaseConnection:
+    def __enter__(self):
+        print("Opening database connection")
+        return self
+        
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        print("Closing database connection")
+        return False
+
+# 2. Machine Learning Pipeline Example
+
+import pandas as pd
+import numpy as np
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import mean_squared_error, r2_score
+
+class FinancialModelPipeline:
+    def __init__(self):
+        self.scaler = StandardScaler()
+        self.model = RandomForestRegressor(n_estimators=100)
+        
+    def preprocess_data(self, data):
+        """
+        Feature engineering for financial data
+        """
+        # Calculate moving averages
+        data['MA5'] = data['close'].rolling(window=5).mean()
+        data['MA20'] = data['close'].rolling(window=20).mean()
+        
+        # Calculate price momentum
+        data['momentum'] = data['close'].pct_change()
+        
+        # Calculate volatility
+        data['volatility'] = data['close'].rolling(window=20).std()
+        
+        # Drop NaN values
+        return data.dropna()
+    
+    def prepare_features(self, data):
+        """
+        Prepare feature matrix X and target vector y
+        """
+        feature_columns = ['MA5', 'MA20', 'momentum', 'volatility']
+        X = data[feature_columns]
+        y = data['close'].shift(-1)  # Next day's price as target
+        return X[:-1], y[:-1]  # Remove last row due to shift
+    
+    def train(self, X, y):
+        """
+        Train the model
+        """
+        X_scaled = self.scaler.fit_transform(X)
+        self.model.fit(X_scaled, y)
+    
+    def predict(self, X):
+        """
+        Make predictions
+        """
+        X_scaled = self.scaler.transform(X)
+        return self.model.predict(X_scaled)
+
+# 3. NLP Processing Pipeline
+
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.naive_bayes import MultinomialNB
+import re
+
+class FinancialNewsAnalyzer:
+    def __init__(self):
+        self.vectorizer = TfidfVectorizer(max_features=5000)
+        self.classifier = MultinomialNB()
+    
+    def preprocess_text(self, text):
+        """
+        Clean and preprocess text data
+        """
+        # Convert to lowercase
+        text = text.lower()
+        
+        # Remove special characters
+        text = re.sub(r'[^a-zA-Z\s]', '', text)
+        
+        # Remove extra whitespace
+        text = ' '.join(text.split())
+        
+        return text
+    
+    def train(self, texts, labels):
+        """
+        Train the sentiment analyzer
+        """
+        # Preprocess all texts
+        processed_texts = [self.preprocess_text(text) for text in texts]
+        
+        # Convert texts to TF-IDF features
+        X = self.vectorizer.fit_transform(processed_texts)
+        
+        # Train classifier
+        self.classifier.fit(X, labels)
+    
+    def predict_sentiment(self, text):
+        """
+        Predict sentiment of new text
+        """
+        processed_text = self.preprocess_text(text)
+        X = self.vectorizer.transform([processed_text])
+        return self.classifier.predict(X)[0]
+
+# 4. API Implementation with FastAPI
+
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
+from typing import List
+
+app = FastAPI()
+
+class StockPredictionRequest(BaseModel):
+    features: List[float]
+
+class NewsAnalysisRequest(BaseModel):
+    text: str
+
+@app.post("/predict/stock")
+async def predict_stock(request: StockPredictionRequest):
+    try:
+        # Assuming we have an instance of FinancialModelPipeline called model
+        prediction = model.predict(np.array(request.features).reshape(1, -1))
+        return {"predicted_price": float(prediction[0])}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.post("/analyze/news")
+async def analyze_news(request: NewsAnalysisRequest):
+    try:
+        # Assuming we have an instance of FinancialNewsAnalyzer called analyzer
+        sentiment = analyzer.predict_sentiment(request.text)
+        return {"sentiment": sentiment}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+
