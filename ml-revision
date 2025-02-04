@@ -236,6 +236,10 @@ async def analyze_news(request: NewsAnalysisRequest):
         return {"sentiment": sentiment}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+.......................................................................................
+.......................................................................................
+
+
 
 
 
