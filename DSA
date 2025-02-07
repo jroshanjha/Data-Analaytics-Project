@@ -12,6 +12,25 @@ Queues in task scheduling enqueue tasks based on their arrival order and dequeue
 
 Arrays are a fundamental data structure in programming and can be used in various coding problems. Here are some real-time examples of how arrays are used:
 
+5. Consider the given string “FootBall”. What character comes at the 3rd index of this string?
+o,t,B,None of above 
+6. In programming, what is the term of joining two or more strings together called?
+Merging , Connecting ,Concatenating ,splitting
+In the context of DSA, joining two or more strings together is called concatenation.
+7. Let us consider two strings S1 and S2 of same length. What is the time complexity to check whether these strings are the same or not in the context of Data Structure and Algorithm?
+
+Quadratic ,Constant ,Linear ,Logarithmic
+Solution description
+To check whether two strings S1 and S2 of the same length are the same, you need to compare each character of S1 with the corresponding character of S2. The time complexity for this comparison is O(n), where n is the length of the strings. This is because you need to perform a linear scan of the strings to ensure all characters match.
+
+8. In DSA, consider the string s = “HappyLife”. Which of the following is not a legit subsequence of this string.
+
+“HappyLife” , “appi” ,“yfe” , “yfi"
+
+9. Consider the string s = “acehlpwxzz”. What is the time complexity of searching any character in the given string?
+For the given sorted string s = "acehlpwxzz", the time complexity of searching for any character is O(logn), where n is the length of the string. This is because you can use binary search, which is efficient for sorted data. Binary search divides the search interval in half each time, resulting in a logarithmic time complexity.
+
+
  
 
 Data Storage:
