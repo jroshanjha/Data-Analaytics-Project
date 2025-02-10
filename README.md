@@ -1,3 +1,9 @@
+# Data-Analaytics-Project
+This repository for Data Analytics Project Uses Python ( Numpy, pandas, seaborn and matplotlib and scipy ) and SQL.
+
+# Machine Learning Project:- 
+Regression and Classification, Neural Network and  NLP for text classification 
+
 ##  Libraries
 import numpy as np
 import pandas as pd
@@ -93,12 +99,6 @@ How To Install MySQL Workbench ?
 
 Here Completed Guidence with Step by Step :-
 Link:- https://docs.google.com/document/d/1d5VfCZcpuFxno80PrEy0a1YZOooobDW4oXrNgG17eNY/edit?usp=sharing
-
-# Data-Analaytics-Project
-This repository for Data Analytics Project Uses Python ( Numpy, pandas, seaborn and matplotlib and scipy ) and SQL.
-
-# Machine Learning Project:- 
-Regression and Classification, Neural Network and  NLP for text classification 
 
 
 
