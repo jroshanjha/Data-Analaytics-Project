@@ -88,7 +88,55 @@ NULL means that the pointer is not pointing to anything.
 
 The time complexity of inserting a node at the head of a linked list is O(1), as it involves updating only the head pointer without traversing the list.
 
+# Types of Linked List
+ 
+There are 3 types of linked list - 
 
+Singly Linked List
+Circular Linked List
+Doubly Linked List
+
+# Singly Linked List
+
+In a singly linked list, there is only one pointer which points to the next node of the list.
+As usual, there will only be one data value in the node.
+The last node points towards NULL.
+The HEAD points towards the first node.
+
+# Circular Linked List
+Circular Linked list is the same as the singly linked list with just one difference. It is that the last node of the linked list (tail) points towards the first node (head) forming a circular cycle.
+No node in the linked list points towards NULL.
+If we start from any node, then after traversal we will again come back to the same node.
+Both the last node of the linked list and head pointer points towards the start node of the linked list.  
+
+# Doubly Linked List
+
+In a doubly linked list, there are two pointers.
+The first pointer is called the next pointer which points to the next node in the list.
+The second pointer is called the previous pointer which points to the previous node in the list.
+As usual, there will only be one data value in the node.
+The next pointer of the last node will be pointed towards NULL.
+The previous pointer of the first node will be pointed towards NULL.
+
+Which of the following is not a type of Linked List in DSA?
+Doubly Linked List
+
+Triply Linked List
+
+Singly Linked List
+
+Circular Linked List
+
+
+What is the main advantage of the circular linked list in DSA?
+
+It allows traversal in one direction.
+
+It simplest insertion and deletion operations
+
+It uses less memory than other lists
+
+It accesses elements much faster than other lists.
 
 
 
