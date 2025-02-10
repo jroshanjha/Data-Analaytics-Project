@@ -78,4 +78,20 @@ Audio Processing:
 Audio Samples: Storing audio samples in an array for processing tasks like filtering, compression, or feature extraction.
 
 
+## Linked List
+Some Important Points - 
+
+There is a pointer which points to the starting node of the linked list. This pointer is known as HEAD. 
+Sometimes , there is also a pointer which points towards the last node of the linked list,  this pointer is called TAIL.
+The next pointer of the last node points towards NULL.
+NULL means that the pointer is not pointing to anything.
+
+The time complexity of inserting a node at the head of a linked list is O(1), as it involves updating only the head pointer without traversing the list.
+
+
+
+
+
+
+
 
