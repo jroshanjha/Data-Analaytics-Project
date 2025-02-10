@@ -65,3 +65,37 @@ if __name__ == '__main__':
 
     fptr.close()
 
+....................................
+def diagonalDifference(arr):
+    # Write your code here
+    
+    o1 = 0 
+    o2 = 0 
+    l = len(arr)
+    for i in range(l):
+        o1 += arr[i][i]
+        o2 += arr[i][l-1-i]
+        
+    return abs(o1 -o2)
+        
+          
+    # for i in range(len(arr)-1,-1,-1):
+    #     for j in 
+        
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    n = int(input().strip())
+
+    arr = []
+
+    for _ in range(n):
+        arr.append(list(map(int, input().rstrip().split())))
+
+    result = diagonalDifference(arr)
+
+    fptr.write(str(result) + '\n')
+
+    fptr.close()
+
