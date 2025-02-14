@@ -150,6 +150,26 @@ Music and Video Players - Most of the video or music-playing apps use linked lis
 Undo/Redo Functionality - Linked lists are used in applications that require undo/redo functionality, such as text editors and graphic design software. Each node in the list stores the state of the document at a specific point in time. Eg - Google Docs, MS Paint, WhiteBoard etc.
 
 
+# Stack
+ Have you ever seen a pile of notebooks kept on the top of one another? Or you must have seen a pile of plates kept on the top of each other near the food stall in a function.
+ This pile is generally known as Stack. Stack is also a type of data structure which can solve many interesting problems in a less amount of time.
+ Let us understand stack in more detail. Here a simple representation of the stack data structure is shown in the memory of the computer.
+
+# Some Important Points about Stack -
+
+ In a stack, the data values are kept on the top of one another. It is shown in the above picture that 2 is the top most element, then 27, then 56 and 34 is the bottom most element.
+ Stack follows the principle of LIFO (Last In First Out). It means the element which is put inside the stack most recently or most lastly will be taken back firstly. In the above example, 2 is pushed into the stack most recently and will be popped most initially. We can also apply this principle in general examples as well. Just like a plate which is kept on the top most recently will be used for serving food for the first time.
+ Also, the element which is kept inside the stack for the first time will be accessed lastly. In the example, 34 is popped for the first time in the stack but will be accessed only if all the above elements are popped. Thus 34 will be accessed lastly.
+ The different operations in the stack are - 
+ PUSH - PUSH means to add an element in the stack. The new element will become the top most element of the stack. The size of the stack increases by 1.
+ POP - POP means to remove an element from the stack. Obviously, the top most element will only be removed.
+ 
+ TOP - TOP means to get the value of the topmost element of stack. If the stack is empty, there will be no top element. 2 is the topmost element of the shown stack.
+ 
+ SIZE - SIZE gives us the count of elements in the stack. If the stack is empty, the size will be 0. The size of the shown stack is 4.
+ EMPTY - EMPTY gives us a boolean value. It is true when the stack is empty and false otherwise. The above stack will give us the value false, because the stack is not empty.
+ 
+ The time complexity of all the above operations is constant. O( 1 )
 
 
 
