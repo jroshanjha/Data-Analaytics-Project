@@ -171,6 +171,8 @@ Undo/Redo Functionality - Linked lists are used in applications that require und
  
  The time complexity of all the above operations is constant. O( 1 )
 
+Which data structure can be used to implement a stack efficiently with both push and pop operations in O(1) time complexity?
+A linked list or doubly linked list can be used to implement a stack efficiently with both push and pop operations in O(1) time complexity.
 
-
+A stack is considered a linear data structure because elements are arranged sequentially, with each element having a direct and unique predecessor and successor, except for the first and last elements
 
