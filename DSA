@@ -138,6 +138,17 @@ It uses less memory than other lists
 
 It accesses elements much faster than other lists.
 
+Real Life applications of Linked List
+
+ 
+
+# A linked list is used in many real-life applications which are used by millions of people.
+Navigation in Browsers - The forward and backward navigation in any browser can be implemented by a Doubly Linked List. Here the webpages are taken as a data value, the forward navigation takes us to the next node, the backward navigation takes us to the previous node. Eg - Chrome, Safari, Brave etc.
+
+Music and Video Players - Most of the video or music-playing apps use linked lists to create a playlist, play songs, add to favourite etc. Each song is represented as a node. Users can easily insert, delete any song from the favourites list. Eg - Spotify, Youtube Music, Saavn etc.
+
+Undo/Redo Functionality - Linked lists are used in applications that require undo/redo functionality, such as text editors and graphic design software. Each node in the list stores the state of the document at a specific point in time. Eg - Google Docs, MS Paint, WhiteBoard etc.
+
 
 
 
