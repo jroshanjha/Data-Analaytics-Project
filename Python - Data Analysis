@@ -99,3 +99,14 @@ if __name__ == '__main__':
 
     fptr.close()
 
+def gradingStudents(grades):
+    # Write your code here
+    l = len(grades)
+    for i in range(l):
+        if grades[i] >=38 and grades[i] % 5>2:
+            grades[i] = (grades[i] // 5 ) * 5 + 5
+            
+    return grades
+
+
+
