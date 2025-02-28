@@ -176,3 +176,74 @@ A linked list or doubly linked list can be used to implement a stack efficiently
 
 A stack is considered a linear data structure because elements are arranged sequentially, with each element having a direct and unique predecessor and successor, except for the first and last elements
 
+A queue is often used in scenarios involving first-come, first-served processing, such as in job scheduling, handling requests in web servers, or managing tasks in print spooling.
+
+Real life applications of Stack and Queue
+ 
+
+Backtracking Algorithms -
+
+Stacks are used in backtracking algorithms, such as solving mazes or puzzles, by storing and managing the state at each step in the stack.
+
+ 
+
+Traffic Management -
+
+Queues can be used in traffic management systems to control the flow of vehicles at intersections and toll booths, ensuring a fair and orderly passage.
+
+ 
+
+Browser History - 
+
+Stacks are used to manage the history of browsers. The most recent web page is kept at the top and the oldest webpage is kept at the bottom of the stack. Thus, the web pages form a monotonic stack in terms of timestamp. They are sorted decreasingly on the basis of timestamps.
+
+In recent browsers, history is cleared after a span of some time (for eg - 3 months). Thus, the web pages having timestamps greater than 3 months are automatically removed from the bottom by different algorithms.
+
+ 
+
+Order Processing in Real Time -
+
+Real life applications like E-commerce websites, shopping sites, online food delivery  and order fulfilment centres often use queues to process orders, ensuring that orders are processed in the order they are received to avoid any confusion and to maintain decidability.
+
+ 
+
+Breadth-First Search (BFS) -
+
+In graph algorithms, queues are used to perform BFS, where nodes are explored level by level, making queues an essential data structure for path-finding and network traversal.
+
+ 
+
+Expression Evaluation -
+
+Stacks are used in the evaluation of mathematical expressions, including infix, postfix, and prefix notations, to manage operators and operands.
+
+ 
+
+Customer Service and Call Center Systems -
+
+Customer service centres often use queues to manage incoming customer requests or calls in the order they were received, ensuring a fair and efficient response system.
+
+...........................................
+...........................................
+
+
+Introduction to Recursion
+
+ 
+
+Any function which calls itself is called recursion. A recursive method solves a problem by calling a copy of itself to work on a smaller problem. Each time a function calls itself with a slightly simpler version of the original problem. This sequence of smaller problems must eventually converge on a base case.
+
+ 
+
+Working of recursion
+
+ 
+
+We can define the steps of the recursive approach by summarizing the above three steps:
+
+Base case: A recursive function must have a terminating condition at which the process will stop calling itself. Such a case is known as the base case. In the absence of a base case, it will keep calling itself and get stuck in an infinite loop. Soon, the recursion depth* will be exceeded and it will throw an error.
+Recursive call (Smaller problem): The recursive function will invoke itself on a smaller version of the main problem. We need to be careful while writing this step as it is crucial to correctly figure out what your smaller problem is.
+Self-work : Generally, we perform a calculation step in each recursive call. We can achieve this calculation step before or after the recursive call depending upon the nature of the problem.
+Note*: Recursion uses an in-built stack that stores recursive calls. Hence, the number of recursive calls must be as small as possible to avoid memory-overflow. If the number of recursion calls exceeded the maximum permissible amount, the recursion depth* will be exceeded. This condition is called stack overflow.
+
+Now, let us see how to solve a few common problems using Recursion.
