@@ -108,5 +108,10 @@ def gradingStudents(grades):
             
     return grades
 
+for i in range(0,len(string),k):
+        substring = string[i:i + k]  # Extract substring of length k
+        unique_chars = "".join(dict.fromkeys(substring))  # Remove duplicates while keeping order
+        print(unique_chars)
+
 
 
