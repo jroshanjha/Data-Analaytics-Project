@@ -114,4 +114,14 @@ for i in range(0,len(string),k):
         print(unique_chars)
 
 
+li = []
+N = int(input())
+columns = input().strip().split()  # Column names
+
+stu = namedtuple("Stu", columns)
+
+students = [stu(*input().strip().split()) for _ in range(N)]
+
+for i in students:
+    li.append(int(i.MARKS))
 
