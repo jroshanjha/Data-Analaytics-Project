@@ -89,7 +89,7 @@ print(ols_model.summary())
 14. **How would you handle large datasets that don't fit into memory?**
     (Mention techniques like chunking, online learning, or out-of-core processing)
 
-15. **What are some common data cleaning tasks in Python?**
+15. **What are some common data-cleaning tasks in Python?**
     (Discuss handling missing values, removing duplicates, dealing with outliers, etc.)
 
 ## .......................................................
