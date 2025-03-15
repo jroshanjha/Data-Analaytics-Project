@@ -201,6 +201,20 @@ FROM STATION
 ORDER BY CITY_LENGTH DESC, CITY
 LIMIT 1; -- Longest city name
 
+-- (SELECT CITY, LENGTH(CITY) AS NAME_LENGTH 
+--  FROM STATION 
+--  ORDER BY LENGTH(CITY) ASC, CITY ASC 
+--  LIMIT 1)
+ 
+-- UNION ALL 
+
+-- (SELECT CITY, LENGTH(CITY) AS NAME_LENGTH 
+--  FROM STATION 
+--  ORDER BY LENGTH(CITY) DESC, CITY ASC 
+--  LIMIT 1);
+
+
+
 Query the smallest Northern Latitude (LAT_N) from STATION that is greater than . Round your answer to  decimal places.
 select round(LAT_N,4) 
 from Station 
