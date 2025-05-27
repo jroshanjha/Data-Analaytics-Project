@@ -1,0 +1,111 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+# 1. Product 
+from itertools import product
+li1 = map(int,input().split())
+li2 = map(int,input().split())
+
+
+output = list(product(li1,li2))
+
+for i in output:
+    print(i,end=" ")
+
+
+from itertools import product
+li1 = map(int,input().split())
+li2 = map(int,input().split())
+
+output = [i for i in (product(li1,li2))]
+# print(output)
+
+for i in output:
+    print(i,end=" ")
+
+# 2. Permutations
+
+from itertools import permutations 
+
+s, n = input().split()
+s = s.upper()
+n = int(n)
+
+li = list(permutations(sorted(s),n))
+output = ["".join(i) for i in li]
+for i in output:
+    print(i)
+
+# 3. Combinations 
+from itertools import combinations
+s,num = input().split()
+
+s = s.upper()
+s = sorted(s)
+
+for n in range(int(num)):
+    for i in combinations(s,n+1):
+        print("".join(i))
+
+# 4. combinations_with_replacement
+
+
+from itertools import combinations_with_replacement
+s,num = input().split()
+
+for i in list(combinations_with_replacement(sorted(s.upper()),int(num))):
+    print("".join(i))
+
+# 5. 
+
+s = input() 
+
+char = s[0]
+count = 1
+output = []
+for i in range(1,len(s)):
+    if s[i]==char:
+        count +=1 
+    else:
+        output.append((count,int(char)))
+        char = s[i]
+        count = 1
+output.append((count,int(char)))
+
+for i in output:
+    print(i,end=" ")
+
+# 6. 
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+from itertools import combinations
+
+N = int(input())
+li = input().split()
+K = int(input())
+
+com = combinations(li,K)
+pro = ["".join(i) for i in com]
+
+# print(pro)
+count = 0
+for i in pro:
+    if 'a' in i:
+        count+=1
+        
+print(count/len(pro))
+    #print("".join(i))
+
+# 7. 
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from itertools import product
+k,m = map(int,input().split())
+max_val = 0
+lists = []
+for _ in range(k):
+    li = list(map(int,input().split()))
+    lists.append(li[1:])
+    
+for i in product(*lists):
+    cur_val = sum( a**2 for a in i) % m 
+    max_val = max(max_val,cur_val)
+    
+print(max_val)
